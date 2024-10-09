@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}IRM Assist{% endblock %}
+
+{% block body %}
+<main>
+    <section>
+        <h1>
+            <strong>Analysez</strong> vos résultats d'IRM
+            <br>
+            <strong>Obtenez</strong> un programme de <strong>rééducation personnalisé</strong>
+            <br>
+            en <strong>quelques clics</strong>
+        </h1>
+        <a href="">
+            <button>
+                <img src="{{ asset('images/whatsapp.png') }}" alt="">
+                <p>Demandez votre IRM</p>
+            </button>
+        </a>
+    </section>
+    <section>
+        <h2>Utilisez l'intelligence artificielle pour un diagnostic rapide et précis et démarrez votre parcours de guérison.</h2>
+    </section>
+    <section>
+        <h2>Recevez vos résultats en 3 étapes</h2>
+        <section>
+            <article>
+                <h3>Etape 1</h3>
+                <img src="{{ asset('images/magifyingGlassColored') }}" alt="">
+                <h4>Analyse automatisée des IRM</h4>
+                <p>
+                    Le personnel médical dépose l'IRM du patient directement sur l'application.
+                    <br>
+                    Une fois l'IRM soumise, notre système d'intelligence artificielle se met en action.
+                    <br><br>
+                    Grâce à son entrainement, il est capable de reconnaitre les motifs et repérer les anomalies et les zones d'intérêt avec précision.
+                </p>
+            </article>
+            <article>
+                <h3>Etape 2</h3>
+                <img src="{{ asset('images/writing') }}" alt="">
+                <h4>Recevez un programme sur mesure</h4>
+                <p>
+                    Recevez un programme adapté à vos besoins.
+                    <br>
+                    Selon le résultat de l'IRM, deux scénarios sont possibles :
+                    <ul>
+                        <li>Soit vous nécessitez pas d'opération. Dans ce cas, un programme de renforncement musculaire vous sera remis. Ce programme sera adapté à vos besoins spécifiques. Vous pourrez par ailleurs consulter à tout moment votre programme</li>
+                        <li>Soit vous nécessitez une opération. Dans ce cas, un programme préopératoire vous sera remis. Vous serez guidé sur la démarche à suivre.</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h3>Etape 3</h3>
+                <img src="{{ asset('images/stats') }}" alt="">
+                <h4>Gardez un oeil sur votre activité</h4>
+                <p>
+                    Consultez votre activité à tout moment !
+                    <br>
+                    Gardez un oeil à vos statistique et bénéficiez de pistes d'amélioration personnalisés pour être au top de votre forme !
+                </p>
+            </article>
+            <a href="{{ path('product_analyst') }}">
+                <button>
+                    <i class="fa-regular fa-lightbulb"></i> Essayez dès maintenant
+                </button>
+            </a>
+        </section>
+        <section>
+            <h3>Nos clients sont satisfaits</h3>
+            <article>
+                <q>Une révolution dans le suivi médical !</q>
+                <div>
+                    <img src="{{ asset('images/person/testimonial.png') }}" alt="">
+                    <p>Dr.Emilie Lefèvre</p>
+                    <p>Médecin radiologue</p>
+                </div>
+            </article>
+            <article>
+                <q>Une aide précieuse pour les patients</q>
+                <div>
+                    <img src="{{ asset('images/person/testimonial.png') }}" alt="">
+                    <p>Marc Dubois</p>
+                    <p>Utilisateur</p>
+                </div>
+            </article>
+            <article>
+                <q>Un outil incontournable en médecine moderne !</q>
+                <div>
+                    <img src="{{ asset('images/person/testimonial.png') }}" alt="">
+                    <p>Dr. Thomas Bernard</p>
+                    <p>Chirurgien</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h3>Rencontrez nos experts</h3>
+            <article>
+                <div>
+                    <img src="{{ asset('images/person/emilieLaurent.png') }}" alt="Photo du docteur Emilie Laurent">
+                </div>
+                <div>
+                    <div>
+                        <h4>Dr. Emilie Laurent</h4>
+                        <p>Obstétricienne</p>
+                    </div>
+                    <div>
+                        <p>Le Dr. Emilie Laurent est une obstétricienne expérimentée, accompagnant les futures mères tout au long de leur grossesse.<br> Elle assure des suivis prénataux rigoureux et intervient lors d'accouchement, avec une attention particulière aux grossesses à risque.</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="{{ asset('images/person/lucasMoreau.png') }}" alt="Photo du docteur Lucas Moreau">
+                </div>
+                <div>
+                    <div>
+                        <h4>Dr. Lucas Moreau</h4>
+                        <p>Médecin généraliste</p>
+                    </div>
+                    <div>
+                        <p>Le Dr. Lucas Moreau est un médecin généraliste polyvalent, offrant des soins de santé de proximité. Il accompagne ses patients dans la gestion de maladies courantes et le suivi médical régulier, tout en se concentrant sur la prévention et l'éducation à la santé.</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="{{ asset('images/person/thomasLefevre.png') }}" alt="Photo du docteur Thomas Lefèvre">
+                </div>
+                <div>
+                    <div>
+                        <h4>Dr. Thomas Lefèvre</h4>
+                        <p>Neurologue</p>
+                    </div>
+                    <div>
+                        <p>Le Dr.Thomas Lefèvre est un neurologue expert, spécialisé dnas le traitement des troubles du système nerveux comme l'épilepsie et les AVC. Il utilise des techniques de pointe pour diagnostiquer et soigner des pathologies neurologiques complexes.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+</main>
+{% endblock %}
