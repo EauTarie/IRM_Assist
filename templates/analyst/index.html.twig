@@ -3,18 +3,58 @@
 {% block title %}Hello AnalystController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/CCI/Documents/Workshop/IRM_Assist/src/Controller/AnalystController.php</code></li>
-        <li>Your template at <code>C:/Users/CCI/Documents/Workshop/IRM_Assist/templates/analyst/index.html.twig</code></li>
-    </ul>
-</div>
+<main>
+    <h1>Diagnostic Assisté par l'Itelligence Artificielle</h1>
+    <h2>Analyse Automatique et Précision Accrue</h2>
+    <section>
+        <div>
+            <img src="{{ asset('images/analyst.png') }}" alt="Analyste examinant le résultat d'une IRM sur son écran">
+        </div>
+        <div>
+            <p>Grâce à l'intégration de l'intelligence artificielle dans le processus d'imagerie par résonance magnétique (IRM), nous proposons une analyse automatisée des images médicales. L'IA permet de détecter des anomalies avec une précision accrue, offrant ainsi une aide précieuse pour les médecins radiologues. L'analyse des images se fait en temps réel, réduisant le délai entre l'examen et le diagnostic.</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3>
+                Détection automatique des anomalies
+            </h3>
+            <p>L'IA Identifie et marque les zones suspectes sur les images IRM, facilitant ainsi la prise de décision médicale.</p>
+            <a href="">
+                <button>
+                    <img src="{{ asset('images/pictogram/whatsapp.png') }}" alt="">
+                    Demandez une démo
+                </button>
+            </a>
+        </div>
+        <div>
+            <img src="{{ asset('images/clinicPreview.png') }}" alt="Chirurgien effectuant une analyse avec un outil de radiologie">
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="{{ asset('images/previewRadio.png')}}" alt="Médecin vue de face, analysant une radio sur son ordinateur d'un thorax d'un de ces patients. Le résultat de la radio pouvant être vue sur le mur derrière le médecin">
+        </div>
+        <div>
+            <h3>
+                Précision renforcée
+            </h3>
+            <p>En combinant les donnéees provenant de multiples examens et des bases de données médicales. L'IA affine le diagnostic avec une plus grande certitude, minimisant les erreurs humaines</p>
+            <a href="">
+                <button>
+                    <img src="{{ asset('images/pictogram/whatsapp') }}" alt="">
+                    Demandez une démo
+                </button>
+            </a>
+        </div>
+    </section>
+    <section>
+        <h3>
+            Réduction du Temps de Diagnostic
+        </h3>
+        <p>
+            Avec cette technologie, les délais entre l'examen et le diagnostic sont drastiquement réduits, permettant aux patients de recevoir des soins plus rapides et adaptés. L'IA aide ainsi ào améliorer la qualité et l'efficacité des soins, tout en réduisatn la charge de travail des professionnels de santé.
+        </p>
+    </section>
+</main>
 {% endblock %}

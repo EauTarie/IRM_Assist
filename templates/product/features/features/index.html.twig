@@ -1,20 +1,67 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello FeaturesController!{% endblock %}
+{% block title %}IRM Assist - Comment ça marche{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/CCI/Documents/Workshop/IRM_Assist/src/Controller/Product/Features/FeaturesController.php</code></li>
-        <li>Your template at <code>C:/Users/CCI/Documents/Workshop/IRM_Assist/templates/product/features/features/index.html.twig</code></li>
-    </ul>
-</div>
+<main>
+    <h1>Comment ça marche ?</h1>
+    <h2>Analyse Automatique et Précision Accrue</h2>
+    <section>
+        <div>
+            <img src="{{ asset('images/preview') }}" alt="Image illustrant l'application sur les appareils fixes et nomades (ordinateurs, tablette et téléphone)">
+        </div>
+        <div>
+            <p>
+                L'IRM Assist utilise l'intelligence artificielle pourj analyser les images obtenues lors d'une IRM en temps réel.
+                <br>
+                Après l'examen, l'IA scanne les images pour détecter automatiquement les anmoalies ou les zones d'intérêt. Ces résultats sont ensuite affichés sur une ijnterface intuitive, permettant aux médecins de comparer les images brutes avec les annotations générées par l'IA.
+                <br>
+                Cela facilite et accélère la prise de décision médicale, tout en améliorant la précision des diagnostics.
+            </p>
+        </div>
+    </section>
+    <section>
+        <h2>Gagnez du temps !</h2>
+        <p>Notre application utilise des technologies avancées pour analyser vos résultats d'IRM et créer un programme de rééducation personnalisé. Découvrez comment elle fonctionne !</p>
+        <img src="{{ asset('images/previewDesktop.png') }}" alt="Image illustrant le rendu du résultat d'IRM sur un écran d'ordinateur">
+        <section>
+            <article>
+                <img src="{{ asset('images/pictogram/statsBoard')}}" alt="">
+                <h3>Analyse automatisée</h3>
+                <p>Une fois vos résultats téléchargés, notre IA analyse les images pour détecter des anomalies et vous propose des recommendations personnaliséees</p>
+                <a href="">
+                    <button>Schéma illustratif</button>
+                </a>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="{{ asset('images/pictogram/cloud')}}" alt="">
+                <h3>Téléchargement des résultats d'IRM</h3>
+                <p>
+                    Téléchargez vos résultats d'IRM directement depuis votre appareil.
+                    <br>
+                    Nous acceptons les fichiers DICOM et JPEG pour une analyse rapide
+                </p>
+                <a href="">
+                    <button>Processus téléchargement</button>
+                </a>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="{{ asset('images/pictogram/statsBoard') }}" alt="">
+                <h3>Inscription et Authentification</h3>
+                <p>
+                    Inscrivez-vous facilement en remplissant un formulaire sécurisé.
+                    <br>
+                    Une fois inscrit, connectez-vous à votre espace persnnel pour accéder à vos données
+                </p>
+                <a href="">
+                    <button>Inscrivez-vous</button>
+                </a>
+            </article>
+        </section>
+    </section>
+</main>
 {% endblock %}
