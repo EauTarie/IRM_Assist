@@ -4,140 +4,172 @@
 
 {% block body %}
 <main>
-    <section>
-        <h1>
-            <strong>Analysez</strong> vos résultats d'IRM
-            <br>
-            <strong>Obtenez</strong> un programme de <strong>rééducation personnalisé</strong>
-            <br>
-            en <strong>quelques clics</strong>
-        </h1>
-        <a href="">
-            <button>
-                <img src="{{ asset('images/whatsapp.png') }}" alt="">
-                <p>Demandez votre IRM</p>
-            </button>
-        </a>
+    <section class="bg-[url('{{ asset('images/banner.png') }}')] bg-cover bg-center bg-no-repeat h-96">
+        <div class="h-full text-center flex flex-col justify-center items-center gap-y-10">
+            <h1 class="text-3xl">
+                <strong>Analysez</strong> vos résultats d'IRM
+                <br>
+                <strong>Obtenez</strong> un programme de <strong>rééducation personnalisé</strong>
+                <br>
+                en <strong>quelques clics</strong>
+            </h1>
+            <a class="text-2xl bg-gradient-to-r from-[#3A8EF6] to-[#65A8FB] py-3 px-3.5 rounded-full" href="">
+                <button class="flex items-center text-white">
+                    <img class="mr-2" src="{{ asset('images/pictogram/whatsapp.png') }}" alt="">
+                    Demandez votre IRM
+                </button>
+            </a>
+        </div>
     </section>
-    <section>
-        <h2>Utilisez l'intelligence artificielle pour un diagnostic rapide et précis et démarrez votre parcours de guérison.</h2>
+    <section class="my-12">
+        <h2 class="text-center text-3xl font-medium">Utilisez l'intelligence artificielle pour un diagnostic rapide et précis et démarrez votre parcours de guérison.</h2>
     </section>
-    <section>
-        <h2>Recevez vos résultats en 3 étapes</h2>
-        <section>
-            <article>
-                <h3>Etape 1</h3>
-                <img src="{{ asset('images/magifyingGlassColored') }}" alt="">
-                <h4>Analyse automatisée des IRM</h4>
-                <p>
-                    Le personnel médical dépose l'IRM du patient directement sur l'application.
-                    <br>
-                    Une fois l'IRM soumise, notre système d'intelligence artificielle se met en action.
-                    <br><br>
-                    Grâce à son entrainement, il est capable de reconnaitre les motifs et repérer les anomalies et les zones d'intérêt avec précision.
-                </p>
-            </article>
-            <article>
-                <h3>Etape 2</h3>
-                <img src="{{ asset('images/writing') }}" alt="">
-                <h4>Recevez un programme sur mesure</h4>
-                <p>
-                    Recevez un programme adapté à vos besoins.
-                    <br>
-                    Selon le résultat de l'IRM, deux scénarios sont possibles :
-                    <ul>
-                        <li>Soit vous nécessitez pas d'opération. Dans ce cas, un programme de renforncement musculaire vous sera remis. Ce programme sera adapté à vos besoins spécifiques. Vous pourrez par ailleurs consulter à tout moment votre programme</li>
-                        <li>Soit vous nécessitez une opération. Dans ce cas, un programme préopératoire vous sera remis. Vous serez guidé sur la démarche à suivre.</li>
-                    </ul>
-                </p>
-            </article>
-            <article>
-                <h3>Etape 3</h3>
-                <img src="{{ asset('images/stats') }}" alt="">
-                <h4>Gardez un oeil sur votre activité</h4>
-                <p>
-                    Consultez votre activité à tout moment !
-                    <br>
-                    Gardez un oeil à vos statistique et bénéficiez de pistes d'amélioration personnalisés pour être au top de votre forme !
-                </p>
-            </article>
-            <a href="{{ path('product_analyst') }}">
-                <button>
-                    <i class="fa-regular fa-lightbulb"></i> Essayez dès maintenant
+    <section class="mb-6">
+        <h2 class="text-center text-3xl font-bold text-[#1B3C74] mb-8">Recevez vos résultats en 3 étapes</h2>
+        <section class="text-center bg-[#E8F1FF] py-20">
+            <section class="flex mb-16">
+                <article class="border-r-2  border-black px-11">
+                    <h3 class="font-bold gtext-3xl mb-12">Etape 1</h3>
+                    <img class="m-auto mb-6" src="{{ asset('images/pictogram/magnifyingGlassColored.png') }}" alt="">
+                    <h4 class="font-bold text-lg m-9">Analyse automatisée des IRM</h4>
+                    <p>
+                        Le personnel médical dépose l'IRM du patient directement sur l'application.
+                        <br>
+                        Une fois l'IRM soumise, notre système d'intelligence artificielle se met en action.
+                        <br><br>
+                        Grâce à son entrainement, il est capable de reconnaitre les motifs et repérer les anomalies et les zones d'intérêt avec précision.
+                    </p>
+                </article>
+                <article class="border-r-2  border-black px-11">
+                    <h3 class="font-bold gtext-3xl mb-12">Etape 2</h3>
+                    <img class="m-auto mb-6" src="{{ asset('images/pictogram/writing.png') }}" alt="">
+                    <h4 class="font-bold text-lg m-9">Recevez un programme sur mesure</h4>
+                    <p>
+                        Recevez un programme adapté à vos besoins.
+                        <br>
+                        Selon le résultat de l'IRM, deux scénarios sont possibles :
+                        <ul class="list-disc mt-6">
+                            <li class="mb-6">Soit vous nécessitez pas d'opération. Dans ce cas, un programme de renforncement musculaire vous sera remis. Ce programme sera adapté à vos besoins spécifiques. Vous pourrez par ailleurs consulter à tout moment votre programme</li>
+                            <li>Soit vous nécessitez une opération. Dans ce cas, un programme préopératoire vous sera remis. Vous serez guidé sur la démarche à suivre.</li>
+                        </ul>
+                    </p>
+                </article>
+                <article class="px-11">
+                    <h3 class="font-bold gtext-3xl mb-12">Etape 3</h3>
+                    <img class="m-auto mb-6" src="{{ asset('images/pictogram/stats.png') }}" alt="">
+                    <h4 class="font-bold text-lg m-9">Gardez un oeil sur votre activité</h4>
+                    <p>
+                        Consultez votre activité à tout moment !
+                        <br>
+                        Gardez un oeil à vos statistique et bénéficiez de pistes d'amélioration personnalisés pour être au top de votre forme !
+                    </p>
+                </article>
+            </section>
+            <a class="bg-gradient-to-r from-[#3A8EF6] to-[#65A8FB] py-3 px-3.5 rounded-full" href="{{ path('product_analyst') }}">
+                <button class="text-white text-xl">
+                    <i class="fa-regular fa-lightbulb mr-3"></i> Essayez dès maintenant
                 </button>
             </a>
         </section>
-        <section>
-            <h3>Nos clients sont satisfaits</h3>
-            <article>
-                <q>Une révolution dans le suivi médical !</q>
-                <div>
-                    <img src="{{ asset('images/person/testimonial.png') }}" alt="">
-                    <p>Dr.Emilie Lefèvre</p>
-                    <p>Médecin radiologue</p>
-                </div>
-            </article>
-            <article>
-                <q>Une aide précieuse pour les patients</q>
-                <div>
-                    <img src="{{ asset('images/person/testimonial.png') }}" alt="">
-                    <p>Marc Dubois</p>
-                    <p>Utilisateur</p>
-                </div>
-            </article>
-            <article>
-                <q>Un outil incontournable en médecine moderne !</q>
-                <div>
-                    <img src="{{ asset('images/person/testimonial.png') }}" alt="">
-                    <p>Dr. Thomas Bernard</p>
-                    <p>Chirurgien</p>
-                </div>
-            </article>
+        <section class="mb-12">
+            <h3 class="font-bold text-2xl text-[#1B3C74] text-center mb-9">Nos clients sont satisfaits</h3>
+            <div class="flex px-11 justify-center">
+                <article class="border border-slate-300 p-6">
+                    <div class="mb-6">
+                        <q class="mb-6">Une révolution dans le suivi médical !</q>
+                    </div>
+                    <div class="flex gap-x-3">
+                        <img class="w-10 h-10" src="{{ asset('images/person/testimonial.png') }}" alt="">
+                        <div>
+                            <p>
+                                Dr.Emilie
+                                <br>
+                                Lefèvre
+                            </p>
+                            <p class="text-gray-300">Médecin radiologue</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="mx-9 border border-slate-300 p-6">
+                    <div class="mb-6">
+                        <q>Une aide précieuse pour les patients</q>
+                    </div>
+                    <div class="flex gap-x-3">
+                        <img class="w-10 h-10" src="{{ asset('images/person/testimonial.png') }}" alt="">
+                        <div>
+                            <p>
+                                Marc
+                                <br>
+                                Dubois
+                            </p>
+                            <p class="text-gray-300">Utilisateur</p>
+                        </div>
+                    </div class="flex">
+                </article>
+                <article class="border border-slate-300 p-6">
+                    <div class="mb-6">
+                        <q class="mb-6">Un outil incontournable en médecine moderne !</q>
+                    </div>
+                    <div class="flex gap-x-3">
+                        <img class="w-10 h-10" src="{{ asset('images/person/testimonial.png') }}" alt="">
+                        <div>
+                            <p>
+                                Dr. Thomas
+                                <br>
+                                Bernard
+                            </p>
+                            <p class="text-gray-300">Chirurgien</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
         <section>
-            <h3>Rencontrez nos experts</h3>
-            <article>
-                <div>
-                    <img src="{{ asset('images/person/emilieLaurent.png') }}" alt="Photo du docteur Emilie Laurent">
-                </div>
-                <div>
-                    <div>
-                        <h4>Dr. Emilie Laurent</h4>
-                        <p>Obstétricienne</p>
+            <h3 class="text-center text-3xl text-[#1B3C74] font-bold mb-12">Rencontrez nos experts</h3>
+            <div class="flex px-11">
+                <article class="flex">
+                    <div class="h-full border-r border-black">
+                        <img class="w-60 max-w-60 object-cover" src="{{ asset('images/person/emilieLaurent.png') }}" alt="Photo du docteur Emilie Laurent">
                     </div>
                     <div>
-                        <p>Le Dr. Emilie Laurent est une obstétricienne expérimentée, accompagnant les futures mères tout au long de leur grossesse.<br> Elle assure des suivis prénataux rigoureux et intervient lors d'accouchement, avec une attention particulière aux grossesses à risque.</p>
+                        <div class="bg-[#AFD9FD] rounded-tr-lg p-3 border-b border-black">
+                            <h4 class="text-base pb-3">Dr. Emilie Laurent</h4>
+                            <p class="text-sm">Obstétricienne</p>
+                        </div>
+                        <div>
+                            <p class="text-xs ml-3 mt-3">Le Dr. Emilie Laurent est une obstétricienne expérimentée, accompagnant les futures mères tout au long de leur grossesse.<br> Elle assure des suivis prénataux rigoureux et intervient lors d'accouchement, avec une attention particulière aux grossesses à risque.</p>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="{{ asset('images/person/lucasMoreau.png') }}" alt="Photo du docteur Lucas Moreau">
-                </div>
-                <div>
-                    <div>
-                        <h4>Dr. Lucas Moreau</h4>
-                        <p>Médecin généraliste</p>
-                    </div>
-                    <div>
-                        <p>Le Dr. Lucas Moreau est un médecin généraliste polyvalent, offrant des soins de santé de proximité. Il accompagne ses patients dans la gestion de maladies courantes et le suivi médical régulier, tout en se concentrant sur la prévention et l'éducation à la santé.</p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="{{ asset('images/person/thomasLefevre.png') }}" alt="Photo du docteur Thomas Lefèvre">
-                </div>
-                <div>
-                    <div>
-                        <h4>Dr. Thomas Lefèvre</h4>
-                        <p>Neurologue</p>
+                </article>
+                <article class="flex mx-16">
+                    <div class="h-full border-r border-black">
+                        <img class="w-60 max-w-60 object-cover" src="{{ asset('images/person/lucasMoreau.png') }}" alt="Photo du docteur Lucas Moreau">
                     </div>
                     <div>
-                        <p>Le Dr.Thomas Lefèvre est un neurologue expert, spécialisé dnas le traitement des troubles du système nerveux comme l'épilepsie et les AVC. Il utilise des techniques de pointe pour diagnostiquer et soigner des pathologies neurologiques complexes.</p>
+                        <div class="bg-[#AFD9FD] rounded-tr-lg p-3 border-b border-black">
+                            <h4 class="text-base pb-3">Dr. Lucas Moreau</h4>
+                            <p class="text-sm">Médecin généraliste</p>
+                        </div>
+                        <div>
+                            <p class="text-xs ml-3 mt-3">Le Dr. Lucas Moreau est un médecin généraliste polyvalent, offrant des soins de santé de proximité. Il accompagne ses patients dans la gestion de maladies courantes et le suivi médical régulier, tout en se concentrant sur la prévention et l'éducation à la santé.</p>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+                <article class="flex">
+                    <div class="h-full border-r border-black">
+                        <img class="w-60 max-w-60 object-cover" src="{{ asset('images/person/thomasLefevre.png') }}" alt="Photo du docteur Thomas Lefèvre">
+                    </div>
+                    <div>
+                        <div class="bg-[#AFD9FD] rounded-tr-lg p-3 border-b border-black">
+                            <h4 class="text-base pb-3">Dr. Thomas Lefèvre</h4>
+                            <p class="text-sm">Neurologue</p>
+                        </div>
+                        <div>
+                            <p class="text-xs ml-3 mt-3">Le Dr.Thomas Lefèvre est un neurologue expert, spécialisé dnas le traitement des troubles du système nerveux comme l'épilepsie et les AVC. Il utilise des techniques de pointe pour diagnostiquer et soigner des pathologies neurologiques complexes.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </section>
 </main>

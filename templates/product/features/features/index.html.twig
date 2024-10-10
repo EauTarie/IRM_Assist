@@ -4,24 +4,26 @@
 
 {% block body %}
 <main>
-    <h1>Comment ça marche ?</h1>
-    <h2>Analyse Automatique et Précision Accrue</h2>
-    <section>
-        <div>
-            <img src="{{ asset('images/preview') }}" alt="Image illustrant l'application sur les appareils fixes et nomades (ordinateurs, tablette et téléphone)">
-        </div>
-        <div>
-            <p>
-                L'IRM Assist utilise l'intelligence artificielle pourj analyser les images obtenues lors d'une IRM en temps réel.
-                <br>
-                Après l'examen, l'IA scanne les images pour détecter automatiquement les anmoalies ou les zones d'intérêt. Ces résultats sont ensuite affichés sur une ijnterface intuitive, permettant aux médecins de comparer les images brutes avec les annotations générées par l'IA.
-                <br>
-                Cela facilite et accélère la prise de décision médicale, tout en améliorant la précision des diagnostics.
-            </p>
-        </div>
+    <section class="bg-[#F2F7FF] py-12 mb-12">
+        <h1 class="text-3xl text-[#1B3C74] text-center font-bold mb-3">Comment ça marche ?</h1>
+        <h2 class="text-2xl text-center mb-6">Analyse Automatique et Précision Accrue</h2>
+        <section class="flex items-center gap-x-3">
+            <div class"w-1/2">
+                <img src="{{ asset('images/preview.png') }}" alt="Image illustrant l'application sur les appareils fixes et nomades (ordinateurs, tablette et téléphone)">
+            </div>
+            <div class="w-1/2">
+                <p>
+                    L'IRM Assist utilise l'intelligence artificielle pour analyser les images obtenues lors d'une IRM en temps réel.
+                    <br>
+                    Après l'examen, l'IA scanne les images pour détecter automatiquement les anmoalies ou les zones d'intérêt. Ces résultats sont ensuite affichés sur une ijnterface intuitive, permettant aux médecins de comparer les images brutes avec les annotations générées par l'IA.
+                    <br>
+                    Cela facilite et accélère la prise de décision médicale, tout en améliorant la précision des diagnostics.
+                </p>
+            </div>
+        </section>
     </section>
     <section>
-        <h2>Gagnez du temps !</h2>
+        <h2 class="text-2xl text-[#1B3C74] text-center font-bold mb-3">Gagnez du temps !</h2>
         <p>Notre application utilise des technologies avancées pour analyser vos résultats d'IRM et créer un programme de rééducation personnalisé. Découvrez comment elle fonctionne !</p>
         <img src="{{ asset('images/previewDesktop.png') }}" alt="Image illustrant le rendu du résultat d'IRM sur un écran d'ordinateur">
         <section>
