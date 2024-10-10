@@ -22,46 +22,48 @@
             </div>
         </section>
     </section>
-    <section>
+    <section class="px-28">
         <h2 class="text-2xl text-[#1B3C74] text-center font-bold mb-3">Gagnez du temps !</h2>
-        <p>Notre application utilise des technologies avancées pour analyser vos résultats d'IRM et créer un programme de rééducation personnalisé. Découvrez comment elle fonctionne !</p>
+        <p class="text-2xl text-center">Notre application utilise des technologies avancées pour analyser vos résultats d'IRM et créer un programme de rééducation personnalisé. Découvrez comment elle fonctionne !</p>
         <img src="{{ asset('images/previewDesktop.png') }}" alt="Image illustrant le rendu du résultat d'IRM sur un écran d'ordinateur">
-        <section>
-            <article>
-                <img src="{{ asset('images/pictogram/statsBoard')}}" alt="">
-                <h3>Analyse automatisée</h3>
-                <p>Une fois vos résultats téléchargés, notre IA analyse les images pour détecter des anomalies et vous propose des recommendations personnaliséees</p>
-                <a href="">
-                    <button>Schéma illustratif</button>
-                </a>
+        <section class="flex justify-center gap-x-3">
+            <article class="w-96 flex flex-col justify-between py-8 px-6 border border-gray-200 shadow-lg">
+                <img class="mb-4 w-12" src="{{ asset('images/pictogram/statsBoard.png')}}" alt="">
+                <h3 class="text-xl font-semibold mb-3">Analyse automatisée</h3>
+                <p class="mb-6">Une fois vos résultats téléchargés, notre IA analyse les images pour détecter des anomalies et vous propose des recommendations personnaliséees</p>
+                <div class="text-center">
+                    <a class="bg-gradient-to-r from-[#3A8EF6] to-[#4896F8] rounded-full text-white py-3 px-3.5 my-3" href="">
+                        <button>Schéma illustratif</button>
+                    </a>
+                </div>
             </article>
-        </section>
-        <section>
-            <article>
-                <img src="{{ asset('images/pictogram/cloud')}}" alt="">
-                <h3>Téléchargement des résultats d'IRM</h3>
-                <p>
+            <article class="w-96 flex flex-col justify-between py-8 px-6 border border-gray-200 shadow-lg">
+                <img class="mb-4 w-12" src="{{ asset('images/pictogram/cloud.png')}}" alt="">
+                <h3 class="text-xl font-semibold mb-3">Téléchargement des résultats d'IRM</h3>
+                <p class="mb-6">
                     Téléchargez vos résultats d'IRM directement depuis votre appareil.
                     <br>
                     Nous acceptons les fichiers DICOM et JPEG pour une analyse rapide
                 </p>
-                <a href="">
-                    <button>Processus téléchargement</button>
-                </a>
+                <div class="text-center">
+                    <a class="bg-gradient-to-r from-[#3A8EF6] to-[#4896F8] rounded-full text-white py-3 px-3.5 my-3" href="">
+                        <button>Processus téléchargement</button>
+                    </a>
+                </div>
             </article>
-        </section>
-        <section>
-            <article>
-                <img src="{{ asset('images/pictogram/statsBoard') }}" alt="">
-                <h3>Inscription et Authentification</h3>
-                <p>
+            <article class="w-96 flex flex-col justify-between py-8 px-6 border border-gray-200 shadow-lg">
+                <img class="mb-4 w-12" src="{{ asset('images/pictogram/writingForm.png') }}" alt="">
+                <h3 class="text-xl font-semibold mb-3">Inscription et Authentification</h3>
+                <p class="mb-6">
                     Inscrivez-vous facilement en remplissant un formulaire sécurisé.
                     <br>
                     Une fois inscrit, connectez-vous à votre espace persnnel pour accéder à vos données
                 </p>
-                <a href="">
-                    <button>Inscrivez-vous</button>
-                </a>
+                <div class="text-center">
+                    <a class="bg-gradient-to-r from-[#3A8EF6] to-[#4896F8] rounded-full text-white py-3 px-3.5 my-3" href="">
+                        <button>Inscrivez-vous</button>
+                    </a>
+                </div>
             </article>
         </section>
     </section>

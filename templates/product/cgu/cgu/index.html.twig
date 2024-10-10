@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conditions Générales d'Utilisation{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Conditions Générales d'Utilisation</h1>
+        <p><strong>Dernière mise à jour :</strong> {{ "now"|date("d/m/Y") }}</p>
+
+        <h2>1. Présentation</h2>
+        <p>
+            Les présentes <strong>Conditions Générales d'Utilisation (CGU)</strong> régissent l'accès et l'utilisation de l'application <strong>IRM_Assist</strong>, éditée par la société <strong>IRM Tech Solutions</strong> dont le siège social est situé au <strong>123 Rue de l'Innovation, 75000 Paris</strong>, enregistrée sous le numéro SIRET <strong>123 456 789 00010</strong>.
+        </p>
+        <p>
+            En utilisant l'application, vous acceptez sans réserve les présentes CGU.
+        </p>
+
+        <h2>2. Accès à l'application</h2>
+        <p>
+            L'application <strong>IRM_Assist</strong> est accessible gratuitement à tout utilisateur disposant d'un accès internet. Tous les coûts liés à l'accès au service, que ce soit les frais matériels, logiciels ou d'accès à internet, sont à la charge de l'utilisateur.
+        </p>
+        <p>
+            L'éditeur met en œuvre tous les moyens à sa disposition pour assurer un accès de qualité à l'application, mais ne garantit pas la disponibilité continue.
+        </p>
+
+        <h2>3. Inscription</h2>
+        <p>
+            L'inscription sur <strong>IRM_Assist</strong> nécessite la fourniture d'informations exactes et complètes, notamment l'email, le nom, le prénom, et d'autres informations comme le numéro de sécurité sociale. L'utilisateur est responsable de la confidentialité de ses identifiants.
+        </p>
+
+        <h2>4. Utilisation de l'application</h2>
+        <p>
+            L'utilisateur s'engage à utiliser l'application <strong>IRM_Assist</strong> conformément à la loi et aux présentes CGU. Toute utilisation frauduleuse ou abusive peut entraîner la suspension de l'accès.
+        </p>
+
+        <h2>5. Responsabilité</h2>
+        <p>
+            <strong>IRM Tech Solutions</strong> ne peut être tenue responsable des dommages directs ou indirects, matériels ou immatériels, résultant de l'utilisation ou de l'impossibilité d'utiliser l'application.
+        </p>
+
+        <h2>6. Propriété intellectuelle</h2>
+        <p>
+            Tous les éléments de l'application <strong>IRM_Assist</strong> (textes, graphismes, logos, etc.) sont la propriété exclusive de <strong>IRM Tech Solutions</strong> et sont protégés par le droit d'auteur et la propriété intellectuelle. Toute reproduction ou représentation sans autorisation est interdite.
+        </p>
+
+        <h2>7. Données personnelles</h2>
+        <p>
+            Les données personnelles des utilisateurs sont collectées dans le cadre de l'utilisation de l'application et font l'objet d'un traitement conformément à notre <a href="{{ path('privacy_policy') }}">Politique de Confidentialité</a>.
+        </p>
+
+        <h2>8. Modifications des CGU</h2>
+        <p>
+            Les présentes CGU peuvent être modifiées à tout moment par <strong>IRM Tech Solutions</strong>. Les utilisateurs seront informés des modifications via l'application ou par email.
+        </p>
+
+        <h2>9. Loi applicable et juridiction</h2>
+        <p>
+            Les présentes CGU sont soumises à la loi française. Tout litige sera soumis à la compétence exclusive des tribunaux français.
+        </p>
+    </div>
+{% endblock %}

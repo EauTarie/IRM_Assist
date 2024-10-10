@@ -8,7 +8,17 @@
             <li><a class="flex font-semibold text-xl" href="{{ path('product_analyst') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/magifying-glass.png') }}" alt="">Analyse</a></li>
             <li><a class="flex font-semibold text-xl" href="{{ path('company_contacts') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/phone.png') }}" alt="">Nous contacter</a></li>
             <li><a class="flex font-semibold text-xl" href="{{ path('product_our_experts') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/team.png') }}" alt="">Nos experts</a></li>
-            <li><a class="flex font-semibold text-xl" href=""><img class="w-7 mr-1.5" src="{{ asset('images/nav/login.png') }}" alt="">Se connecter</a></li>
+            <li>
+                {% if app.user %}
+                    <a class="flex font-semibold text-xl" href="{{ path('logout') }}">
+                        <img class="w-7 mr-1.5" src="{{ asset('images/nav/login.png') }}" alt="">Se déconnecter
+                    </a>
+                {% else %}
+                    <a class="flex font-semibold text-xl" href="{{ path('login') }}">
+                        <img class="w-7 mr-1.5" src="{{ asset('images/nav/login.png') }}" alt="">Se connecter
+                    </a>
+                {% endif %}
+            </li>
         </ul>
     </nav>
 </header>
