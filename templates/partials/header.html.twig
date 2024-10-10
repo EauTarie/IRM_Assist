@@ -1,17 +1,14 @@
-{# templates/partials/header.html.twig #}
-<header>
+<header class="flex justify-around bg-gradient-to-r from-[#4F9BF8] to-[#D0EEFF]">
     <section>
-        <img src="{{ asset('images/logo.png') }}" alt="Bienvenue sur IRM Assist">
+        <a href="{{ path('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Bienvenue sur IRM Assist"></a>
     </section>
-    <nav>
-        <ul>
-            <li><a href="{{ path('product_features') }}">Fonctionnement</a></li>
-            <li><a href="{{ path('product_analyst') }}">Analyse</a></li>
-            <li><a href="{{ path('company_contacts') }}">Nous contacter</a></li>
-            <li><a href="{{ path('product_our_experts') }}">Nos experts</a></li>
+    <nav class="w-9/12">
+        <ul class="flex justify-between h-full items-center">
+            <li><a class="flex font-semibold text-xl" href="{{ path('product_features') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/info.png') }}" alt="">Fonctionnement</a></li>
+            <li><a class="flex font-semibold text-xl" href="{{ path('product_analyst') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/magifying-glass.png') }}" alt="">Analyse</a></li>
+            <li><a class="flex font-semibold text-xl" href="{{ path('company_contacts') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/phone.png') }}" alt="">Nous contacter</a></li>
+            <li><a class="flex font-semibold text-xl" href="{{ path('product_our_experts') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/team.png') }}" alt="">Nos experts</a></li>
+            <li><a class="flex font-semibold text-xl" href=""><img class="w-7 mr-1.5" src="{{ asset('images/nav/login.png') }}" alt="">Se connecter</a></li>
         </ul>
     </nav>
-    <section>
-        <a href="">Se connecter</a>
-    </section>
 </header>
