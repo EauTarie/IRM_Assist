@@ -1,0 +1,24 @@
+<header class="flex justify-around bg-gradient-to-r from-[#4F9BF8] to-[#D0EEFF]">
+    <section>
+        <a href="{{ path('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Bienvenue sur IRM Assist"></a>
+    </section>
+    <nav class="w-9/12">
+        <ul class="flex justify-between h-full items-center">
+            <li><a class="flex font-semibold text-xl" href="{{ path('product_features') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/info.png') }}" alt="">Fonctionnement</a></li>
+            <li><a class="flex font-semibold text-xl" href="{{ path('product_analyst') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/magifying-glass.png') }}" alt="">Analyse</a></li>
+            <li><a class="flex font-semibold text-xl" href="{{ path('company_contacts') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/phone.png') }}" alt="">Nous contacter</a></li>
+            <li><a class="flex font-semibold text-xl" href="{{ path('product_our_experts') }}"><img class="w-7 mr-1.5" src="{{ asset('images/nav/team.png') }}" alt="">Nos experts</a></li>
+            <li>
+                {% if app.user %}
+                    <a class="flex font-semibold text-xl" href="{{ path('logout') }}">
+                        <img class="w-7 mr-1.5" src="{{ asset('images/nav/login.png') }}" alt="">Se déconnecter
+                    </a>
+                {% else %}
+                    <a class="flex font-semibold text-xl" href="{{ path('login') }}">
+                        <img class="w-7 mr-1.5" src="{{ asset('images/nav/login.png') }}" alt="">Se connecter
+                    </a>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+</header>

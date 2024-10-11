@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    <h1 class="text-3xl text-center text-[#1B3C74] font-bold my-12">Inscription</h1>
+
+    <section class="w-3/4 m-auto bg-[#E8F1FF] p-12 rounded-lg">
+        <p>Déjà un compte ? Connectez-vous <a class="text-[#1678F2] underline" href="{{ path('login') }}">ici</a></p>
+        {{ form_start(registrationForm) }}
+            <hr class="my-8 border-l-0 border-r-0 border-b-0 border-t-3 border-[#1678F2] border-solid text-center font-bold h-1.5 text-[#1678F2] overflow-visible after:bg-[#E8F1FF] after:content-['Identité'] after:p-1 after:relative after:-top-5">
+            <div class="flex gap-x-6 mb-3">
+                <div class="form-group">
+                    {{ form_label(registrationForm.firstname) }}<br>
+                    {{ form_widget(registrationForm.firstname, {'attr': {'class': 'form-control border border-black'}}) }}<br>
+                    {{ form_errors(registrationForm.firstname) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(registrationForm.lastname) }}<br>
+                    {{ form_widget(registrationForm.lastname, {'attr': {'class': 'form-control border border-black'}}) }}<br>
+                    {{ form_errors(registrationForm.lastname) }}
+                </div>
+            </div>
+
+            <div class="form-group">
+                {{ form_label(registrationForm.social_security_number) }}<br>
+                {{ form_widget(registrationForm.social_security_number, {'attr': {'class': 'form-control border border-black'}}) }}<br>
+                {{ form_errors(registrationForm.social_security_number) }}
+            </div>
+
+            <hr class="my-8 border-l-0 border-r-0 border-b-0 border-t-3 border-[#1678F2] border-solid text-center font-bold h-1.5 text-[#1678F2] overflow-visible after:bg-[#E8F1FF] after:content-['Contact'] after:p-1 after:relative after:-top-5">
+            <div class="flex gap-x-6 mb-3">
+                <div class="form-group">
+                    {{ form_label(registrationForm.email) }}<br>
+                    {{ form_widget(registrationForm.email, {'attr': {'class': 'form-control border border-black'}}) }}<br>
+                    {{ form_errors(registrationForm.email) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(registrationForm.phone_number) }}<br>
+                    {{ form_widget(registrationForm.phone_number, {'attr': {'class': 'form-control border border-black'}}) }}<br>
+                    {{ form_errors(registrationForm.phone_number) }}
+                </div>
+            </div>
+
+            <hr class="my-8 border-l-0 border-r-0 border-b-0 border-t-3 border-[#1678F2] border-solid text-center font-bold h-1.5 text-[#1678F2] overflow-visible after:bg-[#E8F1FF] after:content-['Mot_de_passe'] after:p-1 after:relative after:-top-5">
+            <div class="flex gap-x-6 mb-3">
+                <div class="form-group">
+                    {{ form_label(registrationForm.password) }}<br>
+                    {{ form_widget(registrationForm.password, {'attr': {'class': 'form-control border border-black'}}) }}<br>
+                    {{ form_errors(registrationForm.password) }}
+                </div>
+
+                <div class="form-group">
+                {{ form_label(registrationForm.confirm_password) }}<br>
+                {{ form_widget(registrationForm.confirm_password, {'attr': {'class': 'form-control border border-black'}}) }}<br>
+                {{ form_errors(registrationForm.confirm_password) }}
+                </div>
+            </div>
+
+            <hr class="my-8 border-l-0 border-r-0 border-b-0 border-t-3 border-[#1678F2] border-solid text-center font-bold h-1.5 text-[#1678F2] overflow-visible after:bg-[#E8F1FF] after:content-['CGU_\&_RGPD'] after:p-1 after:relative after:-top-5">
+            <div class="form-group">
+                <div class="flex items-center">
+                    {{ form_widget(registrationForm.cgu) }}
+                    <label class="ml-4">
+                        J'accepte les 
+                        <a class="text-[#1678F2] underline" href="{{ path('cgu') }}" target="_blank">
+                            Conditions Générales d'Utilisation
+                        </a> 
+                        et la 
+                        <a class="text-[#1678F2] underline" href="{{ path('privacy_policy') }}" target="_blank">
+                            Politique de Confidentialité
+                        </a>
+                    </label>
+                </div>
+                {{ form_errors(registrationForm.cgu) }}
+            </div>
+
+            <hr class="my-8 border-l-0 border-r-0 border-b-0 border-t-3 border-[#1678F2] border-solid text-center font-bold h-1.5 text-[#1678F2] overflow-visible after:p-1 after:relative after:-top-5">
+
+            <button type="submit" class="btn btn-primary bg-gradient-to-r from-[#3A8EF6] to-[#4896F8] rounded-full text-white py-3 px-3.5 my-3">S'inscrire</button>
+        {{ form_end(registrationForm) }}
+    </section>
+{% endblock %}
